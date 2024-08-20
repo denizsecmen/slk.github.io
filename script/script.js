@@ -1,3 +1,4 @@
-$('.carousel').carousel({
-  interval: 5000 // Change this value to your desired speed (in milliseconds)
+var myCarousel = document.querySelector('#carouselExampleControls');
+var carousel = new bootstrap.Carousel(myCarousel, {
+  interval: 5000 
 });

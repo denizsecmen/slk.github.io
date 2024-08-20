@@ -10,15 +10,14 @@
     display: inline-block!important;
   }
   #vnavbar{
-    margin-left: 20px;
     font-size: 16px;
-    margin-top: 15px;
+    padding-top: 20px;
   }
   #vnavbar > div{
     text-align: left;
     width: calc(100%-20px);
     height: 40px;
-
+    margin-left: 20px;
   }
 }
 body {
@@ -30,6 +29,13 @@ body {
   align-items: center;
   overflow-x: auto!important;
 } 
+#navbar{
+  width: 100%;
+  min-height: 90px !important;
+  position: sticky;
+  top: 0; 
+  z-index: 19999!important;
+}
 #layout {
   width: 100%;
   display: flex;
@@ -41,7 +47,6 @@ body {
   padding-left: 1.5%;
   padding-right: 1.5%;
   box-sizing: border-box;
-  position: sticky;
   top: 0; 
   background-color: white; 
   z-index: 1050; 
@@ -61,6 +66,9 @@ body {
   width: 99%;
   display: none;
   overflow: hidden;
+  position: sticky!important;
+  z-index: 9999!important;
+  background-color: white;
 }
 #selection_list {
   min-width: 60%;

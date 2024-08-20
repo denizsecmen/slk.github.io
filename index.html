@@ -21,85 +21,87 @@
     <script src="./script/script.js" defer></script>
   </head>
   <body>
-    <div id="layout">
-      <img src="./assets/logo.png" id="logo" alt="resim yüklenemedi" />
-      <div id="main_text">İnecik Sağlık Ocağı</div>
-      <div id="selection_list">
-        <div class="dropdown" id="anasayfa">
-          <button
-            class="btn dropdown-toggle"
-            type="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            Ana Sayfa
-          </button>
+    <div id="navbar">
+      <div id="layout">
+        <img src="./assets/logo.png" id="logo" alt="resim yüklenemedi" />
+        <div id="main_text">İnecik Sağlık Ocağı</div>
+        <div id="selection_list">
+          <div class="dropdown" id="anasayfa">
+            <button
+              class="btn dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Ana Sayfa
+            </button>
+          </div>
+          <div class="dropdown" id="hakkimizda">
+            <button
+              class="btn dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Hakkımızda
+            </button>
+            <ul class="dropdown-menu" id="hakkimizda-menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+            </ul>
+          </div>
+          <div class="dropdown" id="doktorlarimiz">
+            <button
+              class="btn dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Hekimlerimiz
+            </button>
+            <ul class="dropdown-menu" id="doktorlarimiz-menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+            </ul>
+          </div>
+          <div class="dropdown" id="kurumsal">
+            <button
+              class="btn dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Kurumsal
+            </button>
+            <ul class="dropdown-menu" id="kurumsal-menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+            </ul>
+          </div>
+          <div class="dropdown" id="bize_ulasin">
+            <button
+              class="btn dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Bize Ulaşın
+            </button>
+            <ul class="dropdown-menu" id="bize_ulasin-menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+            </ul>
+          </div>
         </div>
-        <div class="dropdown" id="hakkimizda">
-          <button
-            class="btn dropdown-toggle"
-            type="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            Hakkımızda
-          </button>
-          <ul class="dropdown-menu" id="hakkimizda-menu">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-          </ul>
-        </div>
-        <div class="dropdown" id="doktorlarimiz">
-          <button
-            class="btn dropdown-toggle"
-            type="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            Hekimlerimiz
-          </button>
-          <ul class="dropdown-menu" id="doktorlarimiz-menu">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-          </ul>
-        </div>
-        <div class="dropdown" id="kurumsal">
-          <button
-            class="btn dropdown-toggle"
-            type="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            Kurumsal
-          </button>
-          <ul class="dropdown-menu" id="kurumsal-menu">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-          </ul>
-        </div>
-        <div class="dropdown" id="bize_ulasin">
-          <button
-            class="btn dropdown-toggle"
-            type="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            Bize Ulaşın
-          </button>
-          <ul class="dropdown-menu" id="bize_ulasin-menu">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-          </ul>
-        </div>
+        <img id="vnb_button" src="./assets/3Line.png" />
       </div>
-      <img id="vnb_button" src="./assets/3Line.png" />
-    </div>
-    <div id="vnavbar">
-      <div id="anasayfavn">Anasayfa</div>
-      <div id="hakkimizdavn">Hakkımızda</div>
-      <div id="doktorlarimizvn">Hekimlerimiz</div>
-      <div id="kurumsalvn">Kurumsal</div>
-      <div id="bizeulasinvn">Bize Ulaşın</div>
+      <div id="vnavbar">
+        <div id="anasayfavn">Anasayfa</div>
+        <div id="hakkimizdavn">Hakkımızda</div>
+        <div id="doktorlarimizvn">Hekimlerimiz</div>
+        <div id="kurumsalvn">Kurumsal</div>
+        <div id="bizeulasinvn">Bize Ulaşın</div>
+      </div>
     </div>
     <div
       id="carouselExampleControls"

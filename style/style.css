@@ -2,7 +2,14 @@
   font-family: 'Roboto';
   src: url('../fonts/Roboto-Light.ttf');
 }
-
+@media only screen and (max-width: 600px){
+  #selection_list{
+    display: none!important;
+  }
+  #vnb_button{
+    display: inline-block!important;
+  }
+}
 body {
   margin: 0;
   padding: 0;
@@ -11,8 +18,7 @@ body {
   justify-content: center;
   align-items: center;
   overflow-x: auto!important;
-}
-
+} 
 #layout {
   width: 100%;
   display: flex;
@@ -29,12 +35,21 @@ body {
   background-color: white; 
   z-index: 1050; 
 }
-
+#vnb_button{
+  width: 40px;
+  height: 20px;
+  display: none;
+  margin-right: 20px;
+}
 #logo {
   width: 60px;
   height: 60px;
 }
-
+#vnavbar{
+  height: 400px;
+  display: none;
+  overflow: hidden;
+}
 #selection_list {
   min-width: 60%;
   margin-right: 5px;
@@ -57,7 +72,6 @@ body {
   font-weight: bolder;
   margin-left: 10px;
 }
-
 .dropdown {
   position: relative;
 }
@@ -103,7 +117,7 @@ body {
   z-index: 1050; 
 }
 #carouselExampleControls  img {
-  width: 100vw;
+  width: 100%;
   height: 620px!important;
   object-fit: cover!important;
   overflow: hidden!important;

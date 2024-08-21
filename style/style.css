@@ -45,6 +45,25 @@
     background-color: #0275d8;
     transition: 0.5s;
   }
+  #carouselExampleControls{
+    height: 300px!important;
+  }
+  #carouselExampleControls  img {
+    height: 300px!important;
+  }
+  footer> #info{
+    display: flex;
+    flex-direction: column;
+  }
+  footer #text{
+    width: 100%!important;
+  }
+  footer #contract{
+    width: 100%;
+  }
+  footer .icon{
+    width: 100%;
+  }
 }
 body {
   margin: 0;
@@ -97,7 +116,6 @@ body {
   background-color: white;
 }
 #vnavbar .selections{
-  height: 70px;
   display: none;
   background-color: white;
   color: black;
@@ -154,7 +172,7 @@ body {
 #carouselExampleControls {
   width: 100%;
   position: relative;
-  height: 620px!important;
+  height: 650px;
   margin-top: 10px;
   z-index: 1000; 
   margin: 0;
@@ -175,7 +193,7 @@ body {
 }
 #carouselExampleControls  img {
   width: 100%;
-  height: 620px!important;
+  height: 650px;
   object-fit: cover!important;
   overflow: hidden!important;
 }

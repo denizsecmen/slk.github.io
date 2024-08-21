@@ -216,8 +216,10 @@ h1{
   transition: transform 0.8s ease-in-out;
 }
 #map{
-  width: 50%;
+  width: 90%;
   height: 400px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 #about{
   width: 90% !important;
@@ -249,7 +251,7 @@ footer>#info>#text{
   width: 40%;
   height: 52%;
   overflow: hidden;
-  margin-top: 20px;
+  margin-top: 30px;
   display: flex;
   font-size: 16px;
 

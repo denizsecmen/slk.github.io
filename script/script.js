@@ -17,6 +17,7 @@ $("#vnb_button").on("click", async function (e) {
 })
 $("#vnavbar a").on('click', function () {
   $("#vnavbar").slideUp();
+  $(this).next(".selections").slideDown()
   Status = false;
 });
 $("#vnavbar  .header").on('click', function () {

@@ -20,6 +20,14 @@
     padding-left: 20px;
     padding-top: 7px;
   }
+  #vnavbar > div{
+    display: flex;
+    padding-right: 10px;
+
+  }
+  #vnavbar > div span{
+    flex-grow: 1;
+  }
   #vnavbar > div:hover{
     color: white;
     background-color: #0275d8;
@@ -166,6 +174,8 @@ footer{
   color:#eef;
   padding-left: 10%;
   padding-right: 10%;
+  padding-top: 5%;
+  padding-bottom: 1%;
 }
 footer >#info{
   height: 93%;

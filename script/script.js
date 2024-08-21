@@ -5,19 +5,23 @@ var carousel = new bootstrap.Carousel(myCarousel, {
 let Status = false;
 $("#vnb_button").on("click", async function (e) {
   if (Status) {
-    await $("#vnavbar").slideUp();
+    $("#vnavbar").slideUp();
+    $("#vnavbar .selections").slideUp();
     Status = false;
   }
   else {
-    await $("#vnavbar").slideDown();
+    $("#vnavbar").slideDown();
+    $("#vnavbar > div i").attr("class", "bi bi-caret-right");
     Status = true;
   }
 })
-$("#vnavbar > div").on('click', function () {
+$("#vnavbar  .header").on('click', function () {
   let classValue = $(this).find("i").attr("class");
   if (classValue === "bi bi-caret-right") {
     $(this).find("i").attr("class", "bi bi-caret-down");
+    $(this).next(".selections").slideDown()
   } else {
     $(this).find("i").attr("class", "bi bi-caret-right");
+    $(this).next(".selections").slideUp()
   }
 });

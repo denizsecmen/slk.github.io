@@ -12,20 +12,32 @@
   #vnavbar{
     font-size: 16px;
     padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: 400;
   }
-  #vnavbar > div{
+  #vnavbar .header{
     text-align: left;
     width: 100%;
     height: 40px;
+    margin-top: 10px;
     padding-left: 20px;
     padding-top: 7px;
   }
-  #vnavbar > div{
+  #vnavbar .selection{
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    height: 40px;
+  }
+  #vnavbar .selections{
+    padding-bottom: 10px;
+  }
+  #vnavbar .header{
     display: flex;
     padding-right: 10px;
-
+    padding-top: 10px;
   }
-  #vnavbar > div span{
+  #vnavbar .header span{
     flex-grow: 1;
   }
   #vnavbar > div:hover{
@@ -76,13 +88,24 @@ body {
   height: 60px;
 }
 #vnavbar{
-  height: 300px;
+  height: auto;
   width: 100%;
   display: none;
   overflow: hidden;
   position: sticky!important;
   z-index: 9999!important;
   background-color: white;
+}
+#vnavbar .selections{
+  height: 70px;
+  display: none;
+  background-color: white;
+  color: black;
+}
+#vnavbar .selection:hover{
+  background-color: #0275d8;
+  color: white;
+  transition: 0.3s;
 }
 #selection_list {
   min-width: 60%;

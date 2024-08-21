@@ -15,6 +15,10 @@ $("#vnb_button").on("click", async function (e) {
     Status = true;
   }
 })
+$("#vnavbar a").on('click', function () {
+  $("#vnavbar").slideUp();
+  Status = false;
+});
 $("#vnavbar  .header").on('click', function () {
   let classValue = $(this).find("i").attr("class");
   if (classValue === "bi bi-caret-right") {

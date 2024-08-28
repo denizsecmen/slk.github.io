@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sağlık Ocağı</title>
+    <title>İnecik Aile Sağlık Merkezi</title>
     <link
       rel="stylesheet"
       href="./bootstrap-5.3.3-dist/css/bootstrap.min.css"
@@ -18,6 +18,7 @@
       src="./bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"
       defer
     ></script>
+    <meta name="description" content="İnecik Aile Sağlık Merkezi" />
 
     <script src="./script/script.js" defer></script>
   </head>
@@ -25,7 +26,7 @@
     <div id="navbar">
       <div id="layout">
         <img src="./assets/logo.png" id="logo" alt="resim yüklenemedi" />
-        <div id="main_text">İnecik Sağlık Ocağı</div>
+        <div id="main_text">İnecik Aile Sağlık Merkezi</div>
         <div id="selection_list">
           <div class="dropdown" id="anasayfa">
             <button
@@ -43,12 +44,13 @@
               type="button"
               data-bs-toggle="dropdown"
               aria-expanded="false"
+              data-bs-display="static"
             >
               Hakkımızda
             </button>
-            <ul class="dropdown-menu" id="hakkimizda-menu">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
+            <ul class="dropdown-menu dropdown-menu-none" id="hakkimizda-menu">
+              <a class="dropdown-item" href="#ilce">Hakkımızda</a>
+              <a class="dropdown-item" href="#services">Hizmetlerimiz</a>
             </ul>
           </div>
           <div class="dropdown" id="doktorlarimiz">
@@ -57,26 +59,14 @@
               type="button"
               data-bs-toggle="dropdown"
               aria-expanded="false"
+              data-bs-display="static"
             >
               Hekimlerimiz
             </button>
             <ul class="dropdown-menu" id="doktorlarimiz-menu">
-              <a class="dropdown-item" href="#">Gökhan Emerci</a>
-              <a class="dropdown-item" href="#">Another action</a>
-            </ul>
-          </div>
-          <div class="dropdown" id="kurumsal">
-            <button
-              class="btn dropdown-toggle"
-              type="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Kurumsal
-            </button>
-            <ul class="dropdown-menu" id="kurumsal-menu">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Dr. Gökhan Emerce</a>
+              <a class="dropdown-item" href="#">ASE Melek Akdemir</a>
+              <a class="dropdown-item" href="#">Figen Özdeniz</a>
             </ul>
           </div>
           <div class="dropdown" id="bize_ulasin">
@@ -85,6 +75,7 @@
               type="button"
               data-bs-toggle="dropdown"
               aria-expanded="false"
+              data-bs-display="static"
             >
               Bize Ulaşın
             </button>
@@ -105,26 +96,18 @@
             <span>Hakkımızda</span> <i class="bi bi-caret-right"></i>
           </div>
           <div class="selections">
-            <div class="selection">Selection</div>
-            <div class="selection">Selection</div>
+            <a href="#ilce"><div class="selection">ASM Hakkında</div></a>
+            <a href="#services"><div class="selection">Hizmetlerimiz</div></a>
           </div>
         </div>
         <div id="doktorlarimizvn">
           <div class="header">
-            <span>Hekimlerimiz</span><i class="bi bi-caret-right"></i>
+            <span>Personel</span><i class="bi bi-caret-right"></i>
           </div>
           <div class="selections">
-            <div class="selection">Gökhan Emerci</div>
-            <div class="selection">Selection</div>
-          </div>
-        </div>
-        <div id="kurumsalvn">
-          <div class="header">
-            <span>Kurumsal</span> <i class="bi bi-caret-right"></i>
-          </div>
-          <div class="selections">
-            <div class="selection">Selection</div>
-            <div class="selection">Selection</div>
+            <div class="selection">Gökhan Emerce</div>
+            <div class="selection">ASE Melek Akdemir</div>
+            <div class="selection">Figen Özdeniz</div>
           </div>
         </div>
         <div id="bizeulasinvn">
@@ -140,7 +123,7 @@
     </div>
     <div
       id="carouselExampleControls"
-      class="carousel slide"
+      class="carousel slide lazy-load"
       data-bs-ride="carousel"
       data-bs-interval="12000"
     >
@@ -152,16 +135,20 @@
         ></li>
         <li data-bs-target="#carouselExampleControls" data-bs-slide-to="1"></li>
         <li data-bs-target="#carouselExampleControls" data-bs-slide-to="2"></li>
+        <li data-bs-target="#carouselExampleControls" data-bs-slide-to="3"></li>
       </ul>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="./assets/1.png" alt="First slide" />
+          <img src="./assets/DSCN6321.JPG" alt="First slide" />
         </div>
         <div class="carousel-item">
-          <img src="./assets/2.jpg" alt="Second slide" />
+          <img src="./assets/DSCN6326.JPG" alt="Second slide" />
         </div>
         <div class="carousel-item">
-          <img src="./assets/3.jpg" alt="Third slide" />
+          <img src="./assets/DSCN6324.JPG" alt="Thrird slide" />
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/DSCN6330.JPG" alt="Fourth slide" />
         </div>
       </div>
 
@@ -185,142 +172,60 @@
       </a>
     </div>
     <div id="about">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
-      voluptatem iusto architecto in quis mollitia doloremque minima, tempora,
-      maxime alias asperiores aliquid itaque ducimus quisquam cum repellendus
-      sit expedita ratione. Voluptas quaerat fuga, ad voluptate culpa sequi?
-      Odio ullam hic beatae vero, facere porro eveniet aliquid praesentium
-      maiores fugit quod consectetur. Adipisci assumenda voluptatum non nemo
-      nostrum totam nulla sint. Voluptate ratione earum illum molestias laborum
-      amet labore, distinctio sed provident impedit rem dolor laboriosam
-      officia, itaque aspernatur est. Eveniet iusto amet repudiandae sed, sequi
-      eius doloremque sit magnam reprehenderit! Sit non in nobis? Similique
-      ipsam consequuntur accusantium voluptatem quidem deleniti ab, soluta unde
-      repudiandae iste impedit aliquid distinctio tempore quaerat, laudantium
-      recusandae ipsa quos quibusdam repellendus perspiciatis? Error, velit.
-      Quae veritatis quibusdam accusamus nam adipisci vel voluptatibus labore.
-      Sequi, repellendus aliquam. Itaque dolorum nobis perferendis suscipit,
-      optio atque saepe iusto earum! Fugit, expedita nisi. Temporibus ullam
-      officia cupiditate in? Repudiandae commodi nostrum, alias nam dicta cum
-      temporibus unde porro maiores itaque saepe accusamus enim culpa officia,
-      amet consequuntur hic iure reiciendis omnis quis odio deleniti! Provident
-      nesciunt dolorum rem! Tempore vero delectus tenetur aut possimus, maxime
-      aspernatur et non illo. Officiis nostrum consectetur architecto cum,
-      distinctio dicta! Earum nisi veniam magnam aliquid in, maxime ex quia rem.
-      Perferendis, deserunt! Ab aspernatur possimus illo ad nobis nesciunt
-      magnam, aperiam explicabo eum voluptates, dolorum iste eaque! Nesciunt,
-      quod facilis saepe amet ab quo quidem atque doloremque, impedit distinctio
-      odit molestias tempore? Reiciendis, tempora sit. Sit, aut possimus. Et
-      beatae rerum omnis molestiae doloribus? Excepturi molestias sunt est dicta
-      vero aliquid, culpa ipsum quos, debitis repudiandae dolorum, magni aperiam
-      totam asperiores. Excepturi? Facilis nesciunt velit nobis recusandae
-      delectus ipsam deleniti adipisci ratione aspernatur, perferendis harum
-      laborum, eius, eaque reiciendis incidunt. Iusto libero mollitia fugit
-      reprehenderit impedit, quas quis aspernatur amet cumque? Impedit? Velit
-      magni cumque, enim, odit ducimus corporis libero officiis accusamus vitae
-      fugiat in vero praesentium repellat dolor sunt, quos a? Illo totam
-      quibusdam nostrum voluptatem dignissimos modi labore repudiandae quae.
-      Nisi ut eligendi vero, aut consectetur quasi commodi, eius vitae aliquid
-      eum ipsa unde culpa cupiditate eos mollitia quia exercitationem soluta
-      maxime quo earum consequuntur! Earum pariatur temporibus ullam voluptatem!
-      Officia eum delectus nesciunt, quidem laudantium, molestias modi fugit
-      inventore voluptatem quia maiores quis mollitia sint laboriosam amet rem
-      corporis provident aliquid aperiam voluptates sequi? Qui numquam impedit
-      nobis culpa? Ea, rerum error. Delectus nemo laborum accusantium tempore,
-      quos harum voluptate, cumque repudiandae voluptatem perferendis minima
-      temporibus quisquam distinctio inventore dolores est magnam excepturi,
-      atque ipsa sequi. Eos, accusamus amet. Quia repellat possimus aperiam.
-      Expedita quis est voluptates nostrum in dolorum quia velit quaerat tenetur
-      recusandae facilis ab ducimus illum eum, neque natus modi iure consequatur
-      libero maxime adipisci. Quaerat! Repudiandae vitae consequuntur dolore
-      delectus ab reiciendis praesentium fugit, ducimus deleniti quidem
-      assumenda maxime minima alias temporibus sapiente distinctio eveniet illum
-      accusantium facere dolores eius. Culpa ab voluptas soluta esse! Iure
-      nobis, numquam dolorem excepturi quas sed ipsam! Natus vel ex excepturi
-      nesciunt pariatur corporis. Dolore, laborum est! Provident, quia?
-      Assumenda numquam optio illo reprehenderit voluptates? Hic quasi illo quo!
-      Praesentium molestiae voluptate rem labore maiores blanditiis! Expedita
-      dignissimos esse modi animi alias assumenda saepe. Omnis eligendi nemo
-      reprehenderit nam minima cumque. Delectus dolorem omnis minus veniam rerum
-      deserunt sequi? Earum, ex. Fuga voluptatibus eveniet velit exercitationem
-      perferendis corrupti incidunt. Ut nam labore quas excepturi, voluptatibus
-      tenetur quisquam reprehenderit ipsa quibusdam impedit natus fugiat et
-      voluptatem vero odio debitis officia. Consequuntur eveniet repellat iste
-      nihil non quo veniam placeat culpa, quasi laboriosam? Doloribus
-      voluptatibus impedit soluta numquam quasi perspiciatis exercitationem
-      praesentium dolorem blanditiis, voluptate velit ipsum architecto esse
-      repellendus quis? Eveniet consequuntur laudantium hic quaerat iure facere,
-      soluta quasi, quidem laborum, minima dicta aut ipsam nam similique.
-      Corrupti, laboriosam a. Illo laudantium, minus fuga deleniti nemo
-      obcaecati. Quam, cupiditate! Cupiditate. Sed rerum doloribus cupiditate
-      aspernatur modi, placeat vero pariatur perspiciatis eos saepe.
-      Repellendus, laudantium rem provident placeat perspiciatis beatae incidunt
-      consequuntur maiores quas cupiditate iste ea dolorem obcaecati et. Nihil.
-      Veritatis fugiat at neque laudantium alias molestiae nobis earum. Quod
-      doloribus corrupti ratione vero dolor magnam nostrum, consequatur porro
-      consequuntur voluptatem fugiat soluta nihil ut sed optio est illum
-      excepturi. Quos sapiente reprehenderit magni, cupiditate quibusdam nisi
-      aliquid? Voluptatum quod, laborum maiores quam consequatur aperiam ullam
-      dicta doloribus esse aut quasi perferendis voluptatibus distinctio ipsa?
-      Ipsum modi ratione rem obcaecati. Ipsam saepe impedit omnis eius sed rem
-      sit asperiores reiciendis facere cum! Atque ipsam alias architecto eveniet
-      temporibus, vitae reiciendis amet assumenda sapiente cum odio suscipit
-      impedit dignissimos, laboriosam mollitia! Totam cumque quaerat a
-      repellendus, tempora consequatur nam alias veniam laboriosam et
-      perspiciatis quisquam iure blanditiis ducimus suscipit excepturi voluptas
-      corrupti enim dolorem. Consequatur vel rerum dolorem voluptas nihil quas.
-      Ipsum sed aliquam itaque unde magnam sint alias, aut ducimus ipsam quos
-      facilis eius, voluptatum quod doloremque officia libero quia deserunt
-      atque nobis inventore exercitationem! Illo tempore adipisci ipsa
-      molestias? Voluptatem consectetur nam nihil, nisi ex cumque. Minima
-      exercitationem ex ad? Ipsa provident omnis recusandae aspernatur qui, iure
-      illum enim, nesciunt autem reiciendis quis ipsum modi perferendis corrupti
-      placeat earum. Quos molestias modi eos temporibus ab odio. Rem nemo
-      cupiditate beatae nihil odit tempora modi aut ad quae natus debitis
-      accusamus sunt ipsam adipisci odio voluptas magni, illo doloremque!
-      Necessitatibus. Pariatur esse in sint voluptates excepturi distinctio quam
-      laborum vel, a harum eius, ullam corrupti quod earum perspiciatis?
-      Explicabo nam id asperiores eos veritatis itaque esse, inventore maxime
-      unde quas? Illo, optio? Praesentium dolor amet itaque consequuntur
-      reprehenderit ipsam ad sunt delectus nesciunt illo? At porro veniam eaque
-      nulla, officia illum nemo culpa doloremque aspernatur aliquam, vitae
-      cupiditate ipsa voluptates? Qui laboriosam accusamus, consequuntur velit
-      at odio sint reprehenderit eaque assumenda labore eveniet nemo fugit
-      officiis quam veniam vel. Reiciendis excepturi enim illo culpa dicta,
-      praesentium placeat similique ullam sunt. Id, aliquam. Odio itaque
-      laudantium voluptate quod ea atque aut esse qui reprehenderit! Placeat
-      quam illum quo exercitationem culpa explicabo aut beatae, eligendi
-      distinctio cum aliquam voluptates consequatur optio non. Ipsam earum omnis
-      animi architecto amet ipsa voluptatum, reiciendis nisi? Molestiae nemo
-      error ex dolore numquam autem, alias dicta sapiente ducimus exercitationem
-      amet animi porro. Tenetur facilis expedita autem voluptates! Ipsa
-      voluptatibus beatae maiores vitae unde, enim nam impedit aperiam a
-      expedita deserunt neque ea alias placeat quidem quod. Quos repudiandae
-      iste voluptate ducimus rerum et? Qui molestiae earum voluptas! Eum ea
-      illum suscipit voluptatibus, assumenda doloremque vel voluptas. Ipsam
-      accusantium id necessitatibus dignissimos illo unde amet velit sint modi
-      ratione quae quibusdam cumque quaerat, dolore, ea, hic deserunt deleniti!
-      Alias libero, blanditiis sapiente quae quis quam fugit commodi, saepe eum,
-      exercitationem ratione. In quae ex quia earum culpa dolore dicta a,
-      cupiditate vero, qui maxime repellendus perferendis doloribus nesciunt.
-      Eius mollitia obcaecati optio perferendis maxime dolorem fuga, repudiandae
-      adipisci animi autem voluptate beatae neque error. Iste, sint aspernatur
-      dolorem nihil optio eaque maiores autem distinctio reiciendis quibusdam
-      ipsum et! Asperiores voluptatum iste quisquam eius inventore pariatur
-      itaque laudantium corrupti, assumenda ex architecto quos quaerat fugit
-      facilis reiciendis quis consequuntur provident adipisci aperiam et. Quasi,
-      perferendis natus. Exercitationem, ullam eligendi. Assumenda accusantium
-      dignissimos laudantium quod a laborum aliquam corporis quas mollitia
-      beatae minima ducimus doloremque unde fugit autem explicabo error fuga
-      qui, rem cum incidunt! Quia repellendus tempora consectetur ratione?
+      <div id="ilce">
+        <h1>Hakkımızda</h1>
+        <div id="text">
+          İnecik ASM Tekirdağ merkeze 26km uzaklıkta bulumakta olup aşağıdaki
+          mahallere hizmet vermektedir:
+          <ul>
+            <li>Akçahalil</li>
+            <li>Araphacı</li>
+            <li>Beyoğlu</li>
+            <li>Dedecik</li>
+            <li>Evciler</li>
+            <li>Generli</li>
+            <li>İnecik(Merkez)</li>
+            <li>Karacalı</li>
+            <li>Karansılı</li>
+            <li>Kınıklar</li>
+            <li>Mahranlı</li>
+            <li>Nusratfakı</li>
+            <li>Ormanlı</li>
+            <li>Otmanlı</li>
+            <li>Oğuzlu</li>
+            <li>Selçuk</li>
+            <li>Semetli</li>
+            <li>Tatarlı</li>
+            <li>Yenice</li>
+            <li>Yuva</li>
+          </ul>
+        </div>
+      </div>
+      <div id="services">
+        <h1>Hizmetlerimiz:</h1>
+        <div id="text">
+          <ul>
+            <li><i class="bi bi-heart-pulse-fill"></i> Aşılama</li>
+            <li><i class="bi bi-heart-pulse-fill"></i> Gebe izlem</li>
+            <li><i class="bi bi-heart-pulse-fill"></i> Lohusa izlem</li>
+            <li><i class="bi bi-heart-pulse-fill"></i> Bebek izlem</li>
+            <li><i class="bi bi-heart-pulse-fill"></i> Ayaktan muayene</li>
+          </ul>
+        </div>
+      </div>
     </div>
     <h1>Harita:</h1>
     <iframe
+      src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3014.232469333629!2d27.277465075509888!3d40.93257202408391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDDCsDU1JzU3LjIiTiAyN8KwMTYnNDguMSJF!5e0!3m2!1str!2str!4v1724278791484!5m2!1str!2str"
+      width="600"
+      height="450"
       id="map"
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3014.0816354580197!2d27.280715!3d40.935877999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b47bc35e71081f%3A0x4678e799e6a5bdcc!2zxLBuZWNpayBBaWxlIFNhxJ9sxLFrIE1lcmtlemk!5e0!3m2!1str!2str!4v1724245456310!5m2!1str!2str"
+      style="border: 0"
+      allowfullscreen=""
       loading="lazy"
       referrerpolicy="no-referrer-when-downgrade"
     ></iframe>
+
     <footer>
       <div id="info">
         <div id="contract">
@@ -334,7 +239,7 @@
           </div>
           <div class="icon" id="address">
             <i class="bi bi-map"></i>
-            <div>İnecik,Süleymanpaşa/Tekirdağ</div>
+            <div>İnecik Mahallesi,Paşalar.sk,Süleymanpaşa/Tekirdağ</div>
           </div>
         </div>
         <div id="text">

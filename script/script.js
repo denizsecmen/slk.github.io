@@ -25,29 +25,29 @@ $("#selection_list > .dropdown button").on('click', function(e){
 });
 $("#vnb_button").on("click", async function (e) {
   if (Status) {
-    $("#vnavbar").slideUp();
-    $("#vnavbar .selections").slideUp();
+    $("#vnavbar").slideUp('fast');
+    $("#vnavbar .selections").slideUp('fast');
     Status = false;
   }
   else {
-    $("#vnavbar").slideDown();
+    $("#vnavbar").slideDown('fast');
     $("#vnavbar > div i").attr("class", "bi bi-caret-right");
     Status = true;
   }
 })
 $("#vnavbar a").on('click', function () {
-  $("#vnavbar").slideUp();
-  $(this).next(".selections").slideDown()
+  $("#vnavbar").slideUp('fast');
+  $(this).next(".selections").slideDown('fast')
   Status = false;
 });
 $("#vnavbar  .header").on('click', function () {
   let classValue = $(this).find("i").attr("class");
   if (classValue === "bi bi-caret-right") {
     $(this).find("i").attr("class", "bi bi-caret-down");
-    $(this).next(".selections").slideDown()
+    $(this).next(".selections").slideDown('fast')
   } else {
     $(this).find("i").attr("class", "bi bi-caret-right");
-    $(this).next(".selections").slideUp()
+    $(this).next(".selections").slideUp('fast')
   }
 });
 });

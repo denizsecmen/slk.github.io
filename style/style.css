@@ -249,7 +249,7 @@ h1{
    margin-left: 55%!important;
    height: 50px;
    width: 50px;
-   background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" stroke="%23FFFFFF" viewBox="0 0 8 8"%3E%3Cpath d="M2.5 1L5 4 2.5 7" stroke="%23FFFFFF" stroke-width="1" fill="none" /%3E%3C/svg%3E'); /* Thinner bright white arrow */
+   background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" stroke="%23c593d8" viewBox="0 0 8 8"%3E%3Cpath d="M2.5 1L5 4 2.5 7" stroke="%23FFFFFF" stroke-width="1" fill="none" /%3E%3C/svg%3E'); /* Thinner bright white arrow */
  
 } 
 .carousel-control-prev-icon{ 
@@ -260,7 +260,7 @@ h1{
   height: 50px;
   width: 50px;
   opacity: 1;
-  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" stroke="%23FFFFFF" viewBox="0 0 8 8"%3E%3Cpath d="M5.5 1L3 4l2.5 3" stroke="%23FFFFFF" stroke-width="1" fill="none" /%3E%3C/svg%3E');
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" stroke="%23c593d8" viewBox="0 0 8 8"%3E%3Cpath d="M5.5 1L3 4l2.5 3" stroke="%23FFFFFF" stroke-width="1" fill="none" /%3E%3C/svg%3E');
 }
 .carousel-item{
   transition: transform 0.8s ease-in-out;

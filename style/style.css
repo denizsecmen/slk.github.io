@@ -42,6 +42,10 @@
     background-color: #0275d8;
     transition: 0.5s;
   }
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon{
+    background-size: 35px 35px;
+  }
   #carouselExampleControls{
     height: 300px!important;
   }
@@ -204,7 +208,7 @@ h1{
     padding-bottom: 20px;
     font-weight: 400;
     overflow-y: auto!important;
-    position: fixed;
+    position: absolute;
     max-height: 90vh;
     width: 100%;
     display: none;
@@ -242,12 +246,21 @@ h1{
 .carousel-control-next-icon{
    margin: 0;
    padding: 0;
-   margin-left: 55%!important; 
+   margin-left: 55%!important;
+   height: 50px;
+   width: 50px;
+   background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" stroke="%23FFFFFF" viewBox="0 0 8 8"%3E%3Cpath d="M2.5 1L5 4 2.5 7" stroke="%23FFFFFF" stroke-width="1" fill="none" /%3E%3C/svg%3E'); /* Thinner bright white arrow */
+ 
 } 
 .carousel-control-prev-icon{ 
   margin: 0;
   padding: 0;
+  opacity: 1!important;
   margin-right: 55%!important; 
+  height: 50px;
+  width: 50px;
+  opacity: 1;
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" stroke="%23FFFFFF" viewBox="0 0 8 8"%3E%3Cpath d="M5.5 1L3 4l2.5 3" stroke="%23FFFFFF" stroke-width="1" fill="none" /%3E%3C/svg%3E');
 }
 .carousel-item{
   transition: transform 0.8s ease-in-out;
@@ -284,7 +297,7 @@ h1{
 }
 #about{
   width: 90% !important;
-  word-break: break-all;
+  word-break: none;
   margin-top: 10px;
   margin-bottom: 10px;
 }

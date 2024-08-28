@@ -3,8 +3,9 @@ let scrollvnavbar = document.querySelector('#vnavbar');
 var carousel = new bootstrap.Carousel(myCarousel, {
   interval: 5000 
 });
-let Status = false;
-$("#layout  .dropdown").on('mouseout', function(e){
+let Status = false; 
+$(document).ready(function () {
+  $("#layout  .dropdown").on('mouseout', function(e){
   $(this).children('ul').css('display', 'none');
 }
 );
@@ -48,4 +49,5 @@ $("#vnavbar  .header").on('click', function () {
     $(this).find("i").attr("class", "bi bi-caret-right");
     $(this).next(".selections").slideUp()
   }
+});
 });

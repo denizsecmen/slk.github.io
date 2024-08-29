@@ -4,7 +4,7 @@ var carousel = new bootstrap.Carousel(myCarousel, {
   interval: 5000 
 });
 let Status = false; 
-$(document).ready(function () {
+jQuery(function () {
   $("#layout  .dropdown").on('mouseout', function(e){
   $(this).children('ul').css('display', 'none');
 }
@@ -24,6 +24,7 @@ $("#selection_list > .dropdown button").on('click', function(e){
   }
 });
 $("#vnb_button").on("click", async function (e) {
+  $(".carousel").carousel('pause');
   if (Status) {
     $("#vnavbar").slideUp('fast');
     $("#vnavbar .selections").slideUp('fast');
@@ -34,6 +35,7 @@ $("#vnb_button").on("click", async function (e) {
     $("#vnavbar > div i").attr("class", "bi bi-caret-right");
     Status = true;
   }
+  $(".carousel").carousel('cycle');
 })
 $("#vnavbar a").on('click', function () {
   $("#vnavbar").slideUp('fast');

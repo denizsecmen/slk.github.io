@@ -42,14 +42,18 @@ $("#vnavbar a").on('click', function () {
   $(this).next(".selections").slideDown('fast')
   Status = false;
 });
-$("#vnavbar  .header").on('click', function () {
-  let classValue = $(this).find("i").attr("class");
-  if (classValue === "bi bi-caret-right") {
-    $(this).find("i").attr("class", "bi bi-caret-down");
-    $(this).next(".selections").slideDown('fast')
-  } else {
-    $(this).find("i").attr("class", "bi bi-caret-right");
-    $(this).next(".selections").slideUp('fast')
-  }
-});
+  $("#vnavbar  .header").on('click', function () {
+    let classValue = $(this).find("i").attr("class");
+    if (classValue === "bi bi-caret-right") {
+      $(this).find("i").attr("class", "bi bi-caret-down");
+      $(this).next(".selections").slideDown('fast')
+    } else {
+      $(this).find("i").attr("class", "bi bi-caret-right");
+      $(this).next(".selections").slideUp('fast')
+    }
+  });
+  $('#carouselExampleControls').on('slid', function() {
+  var $nextImage = $('.active.item', this).next('.item').find('img');
+  $nextImage.attr('src', $nextImage.data('lazy-load-src'));
+  });
 });

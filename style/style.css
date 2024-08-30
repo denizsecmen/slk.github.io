@@ -100,6 +100,23 @@ body {
   align-items: center;
   overflow-x: none!important;
 } 
+#mahalle{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  
+}
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #D6EEEE;
+}
+#mahalle  thead{
+  font-size: 21px;
+  font-weight: 50!important;
+}
 a{
   text-decoration: none;
   color:unset;
